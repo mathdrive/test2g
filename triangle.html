@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Математичний тест</title>
     
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Настройки MathJax -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 
+<!-- Подключение MathJax -->
+<script id="MathJax-script" defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+</script>
+    <script>
+window.addEventListener('load', () => {
+  MathJax.typesetPromise(); // сразу прогоняем все формулы после загрузки
+});
+</script>
     <style>
     /* Основной стиль вопросов */
 .question {
 
-  background-image: url("https://i.postimg.cc/t4jzBh2Z/In_Shot_20251128_232217997.jpg");
+  background-image: url("https://raw.githubusercontent.com/mathdrive/image/refs/heads/main/InShot_20251227_121929694.jpg");
 
   background-size: cover;
 
@@ -83,7 +98,7 @@ body {
 
   font-weight: bold;
 
-  background-image: url("https://i.postimg.cc/t4jzBh2Z/In_Shot_20251128_232217997.jpg");
+  background-image: url("https://raw.githubusercontent.com/mathdrive/image/refs/heads/main/InShot_20251227_121929694.jpg");
 
   background-size: cover;
 
@@ -1046,27 +1061,7 @@ box-shadow: 0 0 10px rgba(74, 123, 247, 0.6);
 </style>
 </head>
 <body>
-<html lang="ua">
-
-<head>
-
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Математический тест</title>
-  
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
-<script id="MathJax-script" async
-
- src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-
-</script>
-
-</head>
-
-<body>
-
+    
 <!-- Стартовый экран теста -->
 <div id="start-screen" class="card test-start">
   <div class="card-content">
@@ -2403,7 +2398,7 @@ III. \(\angle A  + \angle C \gt \angle BC\).</p>
   <div class="results-buttons">
 
     <button id="restart-button" type="button">Пройти тест ще раз</button>
- <a href="http://mathdrive.tilda.ws/page104320376.html">
+ <a href="https://mathdrive.github.io/vsi.testi/vsi_testi.html">
     <button id="back-to-list-button" type="button">Перейти до переліку тестів</button>
 
   </div>
